@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		346D52DA462D663F6C7D566F /* libPods-FRTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 589C0E74797AC1F635DA7581 /* libPods-FRTools.a */; };
+		3769E862F1743CDCBD701E62 /* libPods-FRToolsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 073B446DC0031C7C413A3C94 /* libPods-FRToolsTests.a */; };
+		A350499D40D3C3D82D6B91C7 /* libPods-FRToolsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A09592CFFA84B4CD66D430 /* libPods-FRToolsUITests.a */; };
+		E0E3088B1DF50C51001851C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E3088A1DF50C51001851C0 /* main.m */; };
+		E0E3088E1DF50C51001851C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E3088D1DF50C51001851C0 /* AppDelegate.m */; };
+		E0E308911DF50C51001851C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E308901DF50C51001851C0 /* ViewController.m */; };
+		E0E308961DF50C51001851C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0E308951DF50C51001851C0 /* Assets.xcassets */; };
+		E0E308A41DF50C51001851C0 /* FRToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E308A31DF50C51001851C0 /* FRToolsTests.m */; };
+		E0E308AF1DF50C51001851C0 /* FRToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E308AE1DF50C51001851C0 /* FRToolsUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0E308A01DF50C51001851C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0E3087E1DF50C51001851C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0E308851DF50C51001851C0;
+			remoteInfo = FRTools;
+		};
+		E0E308AB1DF50C51001851C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0E3087E1DF50C51001851C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0E308851DF50C51001851C0;
+			remoteInfo = FRTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		073B446DC0031C7C413A3C94 /* libPods-FRToolsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FRToolsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A09592CFFA84B4CD66D430 /* libPods-FRToolsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FRToolsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		589C0E74797AC1F635DA7581 /* libPods-FRTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FRTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EC6A58789EC952A614AB8E9 /* Pods-FRToolsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRToolsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FRToolsTests/Pods-FRToolsTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E056425AA6F3A69C9DFD6DB /* Pods-FRTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FRTools/Pods-FRTools.debug.xcconfig"; sourceTree = "<group>"; };
+		8FCF4F335B6D9316F7137732 /* Pods-FRTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-FRTools/Pods-FRTools.release.xcconfig"; sourceTree = "<group>"; };
+		94C77D64402BA3827D89FFE3 /* Pods-FRToolsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRToolsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FRToolsUITests/Pods-FRToolsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C16DADAE76016C88B6E4B375 /* Pods-FRToolsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRToolsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FRToolsTests/Pods-FRToolsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE68F4BAFC2D04E36650E585 /* Pods-FRToolsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRToolsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FRToolsUITests/Pods-FRToolsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E0E308861DF50C51001851C0 /* FRTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E3088A1DF50C51001851C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E0E3088C1DF50C51001851C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E0E3088D1DF50C51001851C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E0E3088F1DF50C51001851C0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E0E308901DF50C51001851C0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E0E308951DF50C51001851C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0E3089A1DF50C51001851C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E3089F1DF50C51001851C0 /* FRToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E308A31DF50C51001851C0 /* FRToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRToolsTests.m; sourceTree = "<group>"; };
+		E0E308A51DF50C51001851C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E308AA1DF50C51001851C0 /* FRToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E308AE1DF50C51001851C0 /* FRToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRToolsUITests.m; sourceTree = "<group>"; };
+		E0E308B01DF50C51001851C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0E308831DF50C51001851C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346D52DA462D663F6C7D566F /* libPods-FRTools.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E3089C1DF50C51001851C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3769E862F1743CDCBD701E62 /* libPods-FRToolsTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E308A71DF50C51001851C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A350499D40D3C3D82D6B91C7 /* libPods-FRToolsUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F5905AC902090914BAE1D4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				589C0E74797AC1F635DA7581 /* libPods-FRTools.a */,
+				073B446DC0031C7C413A3C94 /* libPods-FRToolsTests.a */,
+				49A09592CFFA84B4CD66D430 /* libPods-FRToolsUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8071E63A3326FC3C765C6B7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E056425AA6F3A69C9DFD6DB /* Pods-FRTools.debug.xcconfig */,
+				8FCF4F335B6D9316F7137732 /* Pods-FRTools.release.xcconfig */,
+				C16DADAE76016C88B6E4B375 /* Pods-FRToolsTests.debug.xcconfig */,
+				6EC6A58789EC952A614AB8E9 /* Pods-FRToolsTests.release.xcconfig */,
+				94C77D64402BA3827D89FFE3 /* Pods-FRToolsUITests.debug.xcconfig */,
+				CE68F4BAFC2D04E36650E585 /* Pods-FRToolsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E0E3087D1DF50C51001851C0 = {
+			isa = PBXGroup;
+			children = (
+				E0E308881DF50C51001851C0 /* FRTools */,
+				E0E308A21DF50C51001851C0 /* FRToolsTests */,
+				E0E308AD1DF50C51001851C0 /* FRToolsUITests */,
+				E0E308871DF50C51001851C0 /* Products */,
+				8071E63A3326FC3C765C6B7D /* Pods */,
+				6F5905AC902090914BAE1D4F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E0E308871DF50C51001851C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0E308861DF50C51001851C0 /* FRTools.app */,
+				E0E3089F1DF50C51001851C0 /* FRToolsTests.xctest */,
+				E0E308AA1DF50C51001851C0 /* FRToolsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0E308881DF50C51001851C0 /* FRTools */ = {
+			isa = PBXGroup;
+			children = (
+				E0E3088C1DF50C51001851C0 /* AppDelegate.h */,
+				E0E3088D1DF50C51001851C0 /* AppDelegate.m */,
+				E0E3088F1DF50C51001851C0 /* ViewController.h */,
+				E0E308901DF50C51001851C0 /* ViewController.m */,
+				E0E308951DF50C51001851C0 /* Assets.xcassets */,
+				E0E3089A1DF50C51001851C0 /* Info.plist */,
+				E0E308891DF50C51001851C0 /* Supporting Files */,
+			);
+			path = FRTools;
+			sourceTree = "<group>";
+		};
+		E0E308891DF50C51001851C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0E3088A1DF50C51001851C0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0E308A21DF50C51001851C0 /* FRToolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0E308A31DF50C51001851C0 /* FRToolsTests.m */,
+				E0E308A51DF50C51001851C0 /* Info.plist */,
+			);
+			path = FRToolsTests;
+			sourceTree = "<group>";
+		};
+		E0E308AD1DF50C51001851C0 /* FRToolsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E0E308AE1DF50C51001851C0 /* FRToolsUITests.m */,
+				E0E308B01DF50C51001851C0 /* Info.plist */,
+			);
+			path = FRToolsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0E308851DF50C51001851C0 /* FRTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0E308B31DF50C51001851C0 /* Build configuration list for PBXNativeTarget "FRTools" */;
+			buildPhases = (
+				2ED1133342A048D879F4C8A3 /* [CP] Check Pods Manifest.lock */,
+				E0E308821DF50C51001851C0 /* Sources */,
+				E0E308831DF50C51001851C0 /* Frameworks */,
+				E0E308841DF50C51001851C0 /* Resources */,
+				9DDCB27F954ABC5C8FEC468C /* [CP] Embed Pods Frameworks */,
+				315E5C5B73EF9A7B05A72297 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FRTools;
+			productName = FRTools;
+			productReference = E0E308861DF50C51001851C0 /* FRTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0E3089E1DF50C51001851C0 /* FRToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0E308B61DF50C51001851C0 /* Build configuration list for PBXNativeTarget "FRToolsTests" */;
+			buildPhases = (
+				DEF2F518AED3DA66DE83E793 /* [CP] Check Pods Manifest.lock */,
+				E0E3089B1DF50C51001851C0 /* Sources */,
+				E0E3089C1DF50C51001851C0 /* Frameworks */,
+				E0E3089D1DF50C51001851C0 /* Resources */,
+				233A73759958E1B31022CF69 /* [CP] Embed Pods Frameworks */,
+				87262F96F3824524E9923F4F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0E308A11DF50C51001851C0 /* PBXTargetDependency */,
+			);
+			name = FRToolsTests;
+			productName = FRToolsTests;
+			productReference = E0E3089F1DF50C51001851C0 /* FRToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E0E308A91DF50C51001851C0 /* FRToolsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0E308B91DF50C51001851C0 /* Build configuration list for PBXNativeTarget "FRToolsUITests" */;
+			buildPhases = (
+				563DCC62B6ACAF284F73B55B /* [CP] Check Pods Manifest.lock */,
+				E0E308A61DF50C51001851C0 /* Sources */,
+				E0E308A71DF50C51001851C0 /* Frameworks */,
+				E0E308A81DF50C51001851C0 /* Resources */,
+				D3ABB483FEA908CC16AA7825 /* [CP] Embed Pods Frameworks */,
+				FBC5FA73AED8E637233D0C45 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0E308AC1DF50C51001851C0 /* PBXTargetDependency */,
+			);
+			name = FRToolsUITests;
+			productName = FRToolsUITests;
+			productReference = E0E308AA1DF50C51001851C0 /* FRToolsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0E3087E1DF50C51001851C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = github.com/xfdev;
+				TargetAttributes = {
+					E0E308851DF50C51001851C0 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					E0E3089E1DF50C51001851C0 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E0E308851DF50C51001851C0;
+					};
+					E0E308A91DF50C51001851C0 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E0E308851DF50C51001851C0;
+					};
+				};
+			};
+			buildConfigurationList = E0E308811DF50C51001851C0 /* Build configuration list for PBXProject "FRTools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0E3087D1DF50C51001851C0;
+			productRefGroup = E0E308871DF50C51001851C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0E308851DF50C51001851C0 /* FRTools */,
+				E0E3089E1DF50C51001851C0 /* FRToolsTests */,
+				E0E308A91DF50C51001851C0 /* FRToolsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0E308841DF50C51001851C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E308961DF50C51001851C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E3089D1DF50C51001851C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E308A81DF50C51001851C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		233A73759958E1B31022CF69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRToolsTests/Pods-FRToolsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2ED1133342A048D879F4C8A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		315E5C5B73EF9A7B05A72297 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRTools/Pods-FRTools-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		563DCC62B6ACAF284F73B55B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		87262F96F3824524E9923F4F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRToolsTests/Pods-FRToolsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DDCB27F954ABC5C8FEC468C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRTools/Pods-FRTools-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3ABB483FEA908CC16AA7825 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRToolsUITests/Pods-FRToolsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEF2F518AED3DA66DE83E793 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FBC5FA73AED8E637233D0C45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRToolsUITests/Pods-FRToolsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0E308821DF50C51001851C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E308911DF50C51001851C0 /* ViewController.m in Sources */,
+				E0E3088E1DF50C51001851C0 /* AppDelegate.m in Sources */,
+				E0E3088B1DF50C51001851C0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E3089B1DF50C51001851C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E308A41DF50C51001851C0 /* FRToolsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E308A61DF50C51001851C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E308AF1DF50C51001851C0 /* FRToolsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0E308A11DF50C51001851C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0E308851DF50C51001851C0 /* FRTools */;
+			targetProxy = E0E308A01DF50C51001851C0 /* PBXContainerItemProxy */;
+		};
+		E0E308AC1DF50C51001851C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0E308851DF50C51001851C0 /* FRTools */;
+			targetProxy = E0E308AB1DF50C51001851C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E0E308B11DF50C51001851C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0E308B21DF50C51001851C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0E308B41DF50C51001851C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E056425AA6F3A69C9DFD6DB /* Pods-FRTools.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FRTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.xfdev.FRTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E0E308B51DF50C51001851C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FCF4F335B6D9316F7137732 /* Pods-FRTools.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FRTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.xfdev.FRTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E0E308B71DF50C51001851C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C16DADAE76016C88B6E4B375 /* Pods-FRToolsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FRToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.xfdev.FRToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FRTools.app/FRTools";
+			};
+			name = Debug;
+		};
+		E0E308B81DF50C51001851C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EC6A58789EC952A614AB8E9 /* Pods-FRToolsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FRToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.xfdev.FRToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FRTools.app/FRTools";
+			};
+			name = Release;
+		};
+		E0E308BA1DF50C51001851C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94C77D64402BA3827D89FFE3 /* Pods-FRToolsUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = FRToolsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.xfdev.FRToolsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FRTools;
+			};
+			name = Debug;
+		};
+		E0E308BB1DF50C51001851C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE68F4BAFC2D04E36650E585 /* Pods-FRToolsUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = FRToolsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.xfdev.FRToolsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FRTools;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0E308811DF50C51001851C0 /* Build configuration list for PBXProject "FRTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0E308B11DF50C51001851C0 /* Debug */,
+				E0E308B21DF50C51001851C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0E308B31DF50C51001851C0 /* Build configuration list for PBXNativeTarget "FRTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0E308B41DF50C51001851C0 /* Debug */,
+				E0E308B51DF50C51001851C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E0E308B61DF50C51001851C0 /* Build configuration list for PBXNativeTarget "FRToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0E308B71DF50C51001851C0 /* Debug */,
+				E0E308B81DF50C51001851C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E0E308B91DF50C51001851C0 /* Build configuration list for PBXNativeTarget "FRToolsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0E308BA1DF50C51001851C0 /* Debug */,
+				E0E308BB1DF50C51001851C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0E3087E1DF50C51001851C0 /* Project object */;
+}
