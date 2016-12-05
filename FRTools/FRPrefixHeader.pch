@@ -1,0 +1,31 @@
+//
+//  FRPrefixHeader.pch
+//  FRTools
+//
+//  Created by sonny on 16/12/5.
+//  Copyright © 2016年 github.com/xfdev. All rights reserved.
+//
+
+#ifndef FRPrefixHeader_pch
+#define FRPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "FRMacro.h"
+#import "FRHttpRequest.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif /* FRPrefixHeader_pch */

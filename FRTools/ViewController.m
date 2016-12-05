@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
 
 @end
@@ -18,6 +19,28 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    NSLog(@"touchesBegan...");
+    
+    NSString *URL = @"http://120.26.100.181/app_1_1_5/RequestInterface/send/taskid/UQ003";
+    
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"1",@"userid",@"3",@"housingState",@"0",@"page", nil];
+    
+    [[FRHttpRequest sharedInstance] requestPost:URL param:dic success:^(id responseObj) {
+        
+        NSLog(@"...");
+        
+    } failure:^(FRHttpError *error) {
+        
+        NSLog(@"error = %@",error);
+        
+    }];
+    
+    
+}
+
 
 
 - (void)didReceiveMemoryWarning {
