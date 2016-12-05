@@ -16,6 +16,8 @@
 		E0E308961DF50C51001851C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0E308951DF50C51001851C0 /* Assets.xcassets */; };
 		E0E308A41DF50C51001851C0 /* FRToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E308A31DF50C51001851C0 /* FRToolsTests.m */; };
 		E0E308AF1DF50C51001851C0 /* FRToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E308AE1DF50C51001851C0 /* FRToolsUITests.m */; };
+		E0E308BF1DF50FD0001851C0 /* FRHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E308BE1DF50FD0001851C0 /* FRHttpRequest.m */; };
+		E0E308C21DF50FFD001851C0 /* FRHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E308C11DF50FFD001851C0 /* FRHttpService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,10 @@
 		E0E308AA1DF50C51001851C0 /* FRToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E308AE1DF50C51001851C0 /* FRToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRToolsUITests.m; sourceTree = "<group>"; };
 		E0E308B01DF50C51001851C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E308BD1DF50FD0001851C0 /* FRHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRHttpRequest.h; sourceTree = "<group>"; };
+		E0E308BE1DF50FD0001851C0 /* FRHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRHttpRequest.m; sourceTree = "<group>"; };
+		E0E308C01DF50FFD001851C0 /* FRHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRHttpService.h; sourceTree = "<group>"; };
+		E0E308C11DF50FFD001851C0 /* FRHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRHttpService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,7 @@
 				E0E3088D1DF50C51001851C0 /* AppDelegate.m */,
 				E0E3088F1DF50C51001851C0 /* ViewController.h */,
 				E0E308901DF50C51001851C0 /* ViewController.m */,
+				E0E308BC1DF50FA6001851C0 /* Helps */,
 				E0E308951DF50C51001851C0 /* Assets.xcassets */,
 				E0E3089A1DF50C51001851C0 /* Info.plist */,
 				E0E308891DF50C51001851C0 /* Supporting Files */,
@@ -172,6 +179,17 @@
 				E0E308B01DF50C51001851C0 /* Info.plist */,
 			);
 			path = FRToolsUITests;
+			sourceTree = "<group>";
+		};
+		E0E308BC1DF50FA6001851C0 /* Helps */ = {
+			isa = PBXGroup;
+			children = (
+				E0E308BD1DF50FD0001851C0 /* FRHttpRequest.h */,
+				E0E308BE1DF50FD0001851C0 /* FRHttpRequest.m */,
+				E0E308C01DF50FFD001851C0 /* FRHttpService.h */,
+				E0E308C11DF50FFD001851C0 /* FRHttpService.m */,
+			);
+			path = Helps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +263,7 @@
 		E0E3087E1DF50C51001851C0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FR;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = github.com/xfdev;
 				TargetAttributes = {
@@ -452,9 +471,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E308C21DF50FFD001851C0 /* FRHttpService.m in Sources */,
 				E0E308911DF50C51001851C0 /* ViewController.m in Sources */,
 				E0E3088E1DF50C51001851C0 /* AppDelegate.m in Sources */,
 				E0E3088B1DF50C51001851C0 /* main.m in Sources */,
+				E0E308BF1DF50FD0001851C0 /* FRHttpRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,6 +696,7 @@
 				E0E308B51DF50C51001851C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0E308B61DF50C51001851C0 /* Build configuration list for PBXNativeTarget "FRToolsTests" */ = {
 			isa = XCConfigurationList;
@@ -683,6 +705,7 @@
 				E0E308B81DF50C51001851C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0E308B91DF50C51001851C0 /* Build configuration list for PBXNativeTarget "FRToolsUITests" */ = {
 			isa = XCConfigurationList;
@@ -691,6 +714,7 @@
 				E0E308BB1DF50C51001851C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

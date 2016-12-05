@@ -6,6 +6,8 @@ target 'FRTools' do
   # use_frameworks!
 
   # Pods for FRTools
+  
+  pod 'AFNetworking', '~> 3.0'
 
   target 'FRToolsTests' do
     inherit! :search_paths
