@@ -20,6 +20,7 @@
 		E0E308C21DF50FFD001851C0 /* FRHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E308C11DF50FFD001851C0 /* FRHttpService.m */; };
 		E0E308C51DF5116F001851C0 /* FRHttpError.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E308C41DF5116F001851C0 /* FRHttpError.m */; };
 		E0E308CA1DF5131A001851C0 /* FRRequestInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E308C91DF5131A001851C0 /* FRRequestInterface.m */; };
+		E0E308CF1DF551F4001851C0 /* FRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E308CE1DF551F4001851C0 /* FRUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		E0E308C81DF5131A001851C0 /* FRRequestInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRRequestInterface.h; sourceTree = "<group>"; };
 		E0E308C91DF5131A001851C0 /* FRRequestInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRRequestInterface.m; sourceTree = "<group>"; };
 		E0E308CB1DF546ED001851C0 /* FRPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPrefixHeader.pch; sourceTree = "<group>"; };
+		E0E308CD1DF551F4001851C0 /* FRUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRUtils.h; sourceTree = "<group>"; };
+		E0E308CE1DF551F4001851C0 /* FRUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,7 @@
 				E0E308901DF50C51001851C0 /* ViewController.m */,
 				E0E308C61DF512B8001851C0 /* Macros */,
 				E0E308BC1DF50FA6001851C0 /* Helps */,
+				E0E308CC1DF551E7001851C0 /* Utils */,
 				E0E308951DF50C51001851C0 /* Assets.xcassets */,
 				E0E3089A1DF50C51001851C0 /* Info.plist */,
 				E0E308891DF50C51001851C0 /* Supporting Files */,
@@ -212,6 +216,15 @@
 				E0E308C91DF5131A001851C0 /* FRRequestInterface.m */,
 			);
 			path = Macros;
+			sourceTree = "<group>";
+		};
+		E0E308CC1DF551E7001851C0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E0E308CD1DF551F4001851C0 /* FRUtils.h */,
+				E0E308CE1DF551F4001851C0 /* FRUtils.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -498,6 +511,7 @@
 				E0E308C21DF50FFD001851C0 /* FRHttpService.m in Sources */,
 				E0E308911DF50C51001851C0 /* ViewController.m in Sources */,
 				E0E3088E1DF50C51001851C0 /* AppDelegate.m in Sources */,
+				E0E308CF1DF551F4001851C0 /* FRUtils.m in Sources */,
 				E0E3088B1DF50C51001851C0 /* main.m in Sources */,
 				E0E308BF1DF50FD0001851C0 /* FRHttpRequest.m in Sources */,
 			);

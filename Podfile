@@ -8,6 +8,7 @@ target 'FRTools' do
   # Pods for FRTools
   
   pod 'AFNetworking', '~> 3.0'
+  pod 'YYModel'
 
   target 'FRToolsTests' do
     inherit! :search_paths

@@ -11,6 +11,7 @@
 
 #import "FRRequestInterface.h"
 #import <AFNetworking.h>
+#import <YYModel.h>
 #import "FRHttpError.h"
 
 @implementation FRHttpService
@@ -88,7 +89,7 @@ static FRHttpService *service = nil;
     
     [manager POST:URL parameters:tmpDic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        NSLog(@"responseObject = %@",responseObject);
+        NSLog(@"\n请求成功：method = %@,\nresponseObject = %@",method,[FRUtils jsonStringWithjsonObject:responseObject]);
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
@@ -109,17 +110,26 @@ static FRHttpService *service = nil;
         NSData *underResponseData = underInfo[AFNetworkingOperationFailingURLResponseDataErrorKey];
         NSLog(@"\nunderResponseData = %@\n\n",[[NSString alloc] initWithData:underResponseData encoding:NSUTF8StringEncoding]);
         
-        FRHttpError *err = [[FRHttpError alloc] init];
+        NSLog(@"\n请求失败：method = %@,.......",method);
+        
+        
+        
+        
+        FRHttpError *err = [FRHttpError yy_modelWithJSON:@""];
         err.code = [NSString stringWithFormat:@"%ld",error.code];
         err.message = error.localizedDescription;
         fail(err);
         
-        // errorInfo有些错误信息不能打印或者不全面
+//        // error.userInfo 有些错误信息不能打印或者不全面
 //        NSLog(@"\nerror.localizedDescription = %@\n\n",error.localizedDescription);
 //        NSString *responseError = errorInfo[AFNetworkingOperationFailingURLResponseErrorKey];
 //        NSLog(@"\nresponseError = %@\n\n",responseError);
 //        NSData *responseData = errorInfo[AFNetworkingOperationFailingURLResponseDataErrorKey];
 //        NSLog(@"\nresponseData = %@\n\n",[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
+//        // 其他的错误信息(上面的不能打印时可以尝试)
+//        NSLog(@"\nerror = %@",error);
+//        NSLog(@"\nerrorInfo.NSDebugDescription = %@",errorInfo[@"NSDebugDescription"]);
+        
     }];
 }
 

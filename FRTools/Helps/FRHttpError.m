@@ -8,10 +8,12 @@
 
 #import "FRHttpError.h"
 
+#import <YYModel.h>
+
 @implementation FRHttpError
 
 
 
-
+YYModelSynthCoderAndHash
 
 @end

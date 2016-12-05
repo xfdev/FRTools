@@ -24,9 +24,9 @@
     
     NSLog(@"touchesBegan...");
     
-    NSString *URL = @"http://120.26.100.181/app_1_1_5/RequestInterface/send/taskid/UQ003";
+    NSString *URL = @"";
     
-    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"1",@"userid",@"3",@"housingState",@"0",@"page", nil];
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"0",@"page", nil];
     
     [[FRHttpRequest sharedInstance] requestPost:URL param:dic success:^(id responseObj) {
         
