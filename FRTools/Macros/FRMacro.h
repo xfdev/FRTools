@@ -10,9 +10,19 @@
 #define FRMacro_h
 
 
+#define weakSelf(wSelf)  __weak __typeof(&*self)wSelf = self;
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 
+// 6位或8位，后两位为透明度（00-10，可不传）
+#ifndef FRColorHex
+#define FRColorHex(hex)     [FRUtils colorWithHex:hex]
+#endif
 
-
+// 文字类颜色 FRColor
+#define FRColor333          FRColorHex(@"333333")       // 项目中黑色
+#define FRColor666          FRColorHex(@"666666")       // 项目中中黑色
+#define FRColor999          FRColorHex(@"999999")       // 项目中灰色
 
 
 
