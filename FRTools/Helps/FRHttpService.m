@@ -86,12 +86,16 @@ static FRHttpService *service = nil;
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.securityPolicy  = securityPolicy;
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", nil];
+//    manager.requestSerializer = [AFJSONRequestSerializer serializer];// 请求为 json 数据，`Content-Type` encoded request `application/json`.
+//    manager.requestSerializer = [AFHTTPRequestSerializer serializer];// 默认为此选项，请求为 From 表单
     
     [manager POST:URL parameters:tmpDic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         NSLog(@"\n请求成功：method = %@,\nresponseObject = %@",method,[FRUtils jsonStringWithjsonObject:responseObject]);
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        NSLog(@"\n请求失败：method = %@,.......",method);
         
         NSDictionary *errorInfo = error.userInfo;
 //        NSLog(@"\nerror.userInfo = %@\n\n",errorInfo);
@@ -109,11 +113,6 @@ static FRHttpService *service = nil;
         
         NSData *underResponseData = underInfo[AFNetworkingOperationFailingURLResponseDataErrorKey];
         NSLog(@"\nunderResponseData = %@\n\n",[[NSString alloc] initWithData:underResponseData encoding:NSUTF8StringEncoding]);
-        
-        NSLog(@"\n请求失败：method = %@,.......",method);
-        
-        
-        
         
         FRHttpError *err = [FRHttpError yy_modelWithJSON:@""];
         err.code = [NSString stringWithFormat:@"%ld",error.code];
