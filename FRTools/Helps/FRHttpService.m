@@ -114,7 +114,7 @@ static FRHttpService *service = nil;
         NSData *underResponseData = underInfo[AFNetworkingOperationFailingURLResponseDataErrorKey];
         NSLog(@"\nunderResponseData = %@\n\n",[[NSString alloc] initWithData:underResponseData encoding:NSUTF8StringEncoding]);
         
-        FRHttpError *err = [FRHttpError yy_modelWithJSON:@""];
+        FRHttpError *err = [FRHttpError new];
         err.code = [NSString stringWithFormat:@"%ld",error.code];
         err.message = error.localizedDescription;
         fail(err);
