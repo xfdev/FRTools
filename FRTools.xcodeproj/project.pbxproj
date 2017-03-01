@@ -10,6 +10,7 @@
 		346D52DA462D663F6C7D566F /* libPods-FRTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 589C0E74797AC1F635DA7581 /* libPods-FRTools.a */; };
 		3769E862F1743CDCBD701E62 /* libPods-FRToolsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 073B446DC0031C7C413A3C94 /* libPods-FRToolsTests.a */; };
 		A350499D40D3C3D82D6B91C7 /* libPods-FRToolsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A09592CFFA84B4CD66D430 /* libPods-FRToolsUITests.a */; };
+		E086A5361E66A85A002AFD8D /* FRDottedLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E086A5351E66A85A002AFD8D /* FRDottedLineView.m */; };
 		E0E3088B1DF50C51001851C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E3088A1DF50C51001851C0 /* main.m */; };
 		E0E3088E1DF50C51001851C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E3088D1DF50C51001851C0 /* AppDelegate.m */; };
 		E0E308911DF50C51001851C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E308901DF50C51001851C0 /* ViewController.m */; };
@@ -50,6 +51,8 @@
 		94C77D64402BA3827D89FFE3 /* Pods-FRToolsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRToolsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FRToolsUITests/Pods-FRToolsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C16DADAE76016C88B6E4B375 /* Pods-FRToolsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRToolsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FRToolsTests/Pods-FRToolsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE68F4BAFC2D04E36650E585 /* Pods-FRToolsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRToolsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FRToolsUITests/Pods-FRToolsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E086A5341E66A85A002AFD8D /* FRDottedLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDottedLineView.h; sourceTree = "<group>"; };
+		E086A5351E66A85A002AFD8D /* FRDottedLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDottedLineView.m; sourceTree = "<group>"; };
 		E0E308861DF50C51001851C0 /* FRTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E3088A1DF50C51001851C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E0E3088C1DF50C51001851C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +132,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E086A5331E66A81A002AFD8D /* PublicView */ = {
+			isa = PBXGroup;
+			children = (
+				E086A5341E66A85A002AFD8D /* FRDottedLineView.h */,
+				E086A5351E66A85A002AFD8D /* FRDottedLineView.m */,
+			);
+			path = PublicView;
+			sourceTree = "<group>";
+		};
 		E0E3087D1DF50C51001851C0 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +173,7 @@
 				E0E308C61DF512B8001851C0 /* Macros */,
 				E0E308BC1DF50FA6001851C0 /* Helps */,
 				E0E308CC1DF551E7001851C0 /* Utils */,
+				E086A5331E66A81A002AFD8D /* PublicView */,
 				E0E308951DF50C51001851C0 /* Assets.xcassets */,
 				E0E3089A1DF50C51001851C0 /* Info.plist */,
 				E0E308891DF50C51001851C0 /* Supporting Files */,
@@ -511,6 +524,7 @@
 				E0E308C21DF50FFD001851C0 /* FRHttpService.m in Sources */,
 				E0E308911DF50C51001851C0 /* ViewController.m in Sources */,
 				E0E3088E1DF50C51001851C0 /* AppDelegate.m in Sources */,
+				E086A5361E66A85A002AFD8D /* FRDottedLineView.m in Sources */,
 				E0E308CF1DF551F4001851C0 /* FRUtils.m in Sources */,
 				E0E3088B1DF50C51001851C0 /* main.m in Sources */,
 				E0E308BF1DF50FD0001851C0 /* FRHttpRequest.m in Sources */,
